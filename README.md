@@ -44,3 +44,5 @@ Then get device info with the following code.
 * <a href="https://t.me/QiModify_Offical">@QiModify_Offical</a> on Telegram
 * アイオアイカキ(1156332575) on Tencent QQ
 
+**本项目仅供学习交流，请勿用于非法用途或销售本项目！**
+**This project is only for learning and exchange, please do not use it for illegal purposes or sell this project!**
