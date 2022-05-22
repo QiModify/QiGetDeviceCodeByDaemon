@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87335E43281555C000011BFD /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87335E42281555C000011BFD /* main.mm */; };
+		87335E4B281555DB00011BFD /* DeviceGetIDs.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87335E49281555DB00011BFD /* DeviceGetIDs.mm */; };
+		87335E4D281555DF00011BFD /* libMobileGestalt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87335E4C281555DF00011BFD /* libMobileGestalt.dylib */; platformFilter = ios; };
+		87335E50281555F900011BFD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87335E4F281555F900011BFD /* Security.framework */; };
+		87335EDC2815879A00011BFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87335EDB2815879A00011BFD /* UIKit.framework */; };
+		87F09B252816319A005ED8BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F09B242816319A005ED8BA /* Foundation.framework */; };
+		87F09B27281631E2005ED8BA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F09B26281631E2005ED8BA /* CFNetwork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87335E38281555C000011BFD /* getdeviceids */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = getdeviceids; sourceTree = BUILT_PRODUCTS_DIR; };
+		87335E3D281555C000011BFD /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		87335E3E281555C000011BFD /* monkeydev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = monkeydev.entitlements; sourceTree = "<group>"; };
+		87335E41281555C000011BFD /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 0xdeadfa11; sourceTree = "<group>"; };
+		87335E42281555C000011BFD /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		87335E49281555DB00011BFD /* DeviceGetIDs.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DeviceGetIDs.mm; sourceTree = "<group>"; };
+		87335E4A281555DB00011BFD /* DeviceGetIDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceGetIDs.h; sourceTree = "<group>"; };
+		87335E4C281555DF00011BFD /* libMobileGestalt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libMobileGestalt.dylib; sourceTree = "<group>"; };
+		87335E4F281555F900011BFD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		87335EDB2815879A00011BFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		87F09B242816319A005ED8BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		87F09B26281631E2005ED8BA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87335E35281555C000011BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F09B27281631E2005ED8BA /* CFNetwork.framework in Frameworks */,
+				87F09B252816319A005ED8BA /* Foundation.framework in Frameworks */,
+				87335EDC2815879A00011BFD /* UIKit.framework in Frameworks */,
+				87335E50281555F900011BFD /* Security.framework in Frameworks */,
+				87335E4D281555DF00011BFD /* libMobileGestalt.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87335E2F281555C000011BFD = {
+			isa = PBXGroup;
+			children = (
+				87335E3A281555C000011BFD /* getdeviceids */,
+				87335E39281555C000011BFD /* Products */,
+				87335E4E281555F900011BFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87335E39281555C000011BFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87335E38281555C000011BFD /* getdeviceids */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87335E3A281555C000011BFD /* getdeviceids */ = {
+			isa = PBXGroup;
+			children = (
+				87335E4C281555DF00011BFD /* libMobileGestalt.dylib */,
+				87335E4A281555DB00011BFD /* DeviceGetIDs.h */,
+				87335E49281555DB00011BFD /* DeviceGetIDs.mm */,
+				87335E42281555C000011BFD /* main.mm */,
+				87335E3E281555C000011BFD /* monkeydev.entitlements */,
+				87335E3B281555C000011BFD /* Package */,
+			);
+			path = getdeviceids;
+			sourceTree = "<group>";
+		};
+		87335E3B281555C000011BFD /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				87335E3C281555C000011BFD /* DEBIAN */,
+				87335E3F281555C000011BFD /* usr */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		87335E3C281555C000011BFD /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				87335E3D281555C000011BFD /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		87335E3F281555C000011BFD /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				87335E40281555C000011BFD /* bin */,
+			);
+			path = usr;
+			sourceTree = "<group>";
+		};
+		87335E40281555C000011BFD /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				87335E41281555C000011BFD /* 0xdeadfa11 */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		87335E4E281555F900011BFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87F09B26281631E2005ED8BA /* CFNetwork.framework */,
+				87F09B242816319A005ED8BA /* Foundation.framework */,
+				87335EDB2815879A00011BFD /* UIKit.framework */,
+				87335E4F281555F900011BFD /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87335E37281555C000011BFD /* getdeviceids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87335E46281555C000011BFD /* Build configuration list for PBXNativeTarget "getdeviceids" */;
+			buildPhases = (
+				87335E34281555C000011BFD /* Sources */,
+				87335E35281555C000011BFD /* Frameworks */,
+				87335E36281555C000011BFD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = getdeviceids;
+			productName = getdeviceids;
+			productReference = 87335E38281555C000011BFD /* getdeviceids */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87335E30281555C000011BFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					87335E37281555C000011BFD = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 87335E33281555C000011BFD /* Build configuration list for PBXProject "getdeviceids" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87335E2F281555C000011BFD;
+			productRefGroup = 87335E39281555C000011BFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87335E37281555C000011BFD /* getdeviceids */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87335E36281555C000011BFD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87335E34281555C000011BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87335E43281555C000011BFD /* main.mm in Sources */,
+				87335E4B281555DB00011BFD /* DeviceGetIDs.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		87335E44281555C000011BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"getdeviceids\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87335E45281555C000011BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"getdeviceids\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		87335E47281555C000011BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = getdeviceids/monkeydev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V78W796AY9;
+				INSTALL_PATH = /usr/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qi.getdeviceids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87335E48281555C000011BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = getdeviceids/monkeydev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V78W796AY9;
+				INSTALL_PATH = /usr/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qi.getdeviceids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87335E33281555C000011BFD /* Build configuration list for PBXProject "getdeviceids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87335E44281555C000011BFD /* Release */,
+				87335E45281555C000011BFD /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87335E46281555C000011BFD /* Build configuration list for PBXNativeTarget "getdeviceids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87335E47281555C000011BFD /* Release */,
+				87335E48281555C000011BFD /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87335E30281555C000011BFD /* Project object */;
+}

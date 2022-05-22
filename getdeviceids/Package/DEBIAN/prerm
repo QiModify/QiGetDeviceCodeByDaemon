@@ -1,0 +1,1 @@
+/bin/launchctl unload /Library/LaunchDaemons/com.qi.getdeviceids.plist

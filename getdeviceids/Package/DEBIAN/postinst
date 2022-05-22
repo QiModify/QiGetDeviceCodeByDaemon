@@ -1,0 +1,5 @@
+#!/bin/sh
+chown -R root:wheel /usr/bin/getdeviceids
+chown -R root:wheel /Library/LaunchDaemons/com.qi.getdeviceids.plist
+/bin/launchctl unload /Library/LaunchDaemons/com.qi.getdeviceids.plist
+/bin/launchctl load /Library/LaunchDaemons/com.qi.getdeviceids.plist
